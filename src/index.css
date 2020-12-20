@@ -1,13 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* =================================== sign in form start ===================================*/
+.sign-in-form {
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+} /* 10px from top and bottom and auto means div in middle of left right */
+.sign-in-form button {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.sign-in-form button img {
+  height: 20px;
+  margin-right: 10px;
+}
+/* =================================== sign in form end ===================================*/
+
+/* =================================== Side Bar start ===================================*/
+.sideBar {
+  box-sizing: border-box;
+  background: #3f0e40;
+  width: 230px;
+  min-width: 230px;
+  min-height: 100vh;
+}
+
+.sideBar .channels li:hover {
+  background: #301934;
+  cursor: pointer;
+}
+
+/* =================================== Side Bar end ===================================*/
+
+/* =================================== Main Container start ===================================*/
+.mainContainer {
+  width: 100%;
+}
+
+.mainContainer .message-list .message .left-block img {
+  height: 40px;
+}
+
+.mainContainer .message-list .message .right-block .user span {
+  font-weight: 400;
+  color: rgb(97, 96, 97);
+  font-size: 10px;
+}
+
+.mainContainer .chat-box {
+  position: fixed;
+  bottom: 0%;
+}
+
+/* =================================== Main Container end ===================================*/
